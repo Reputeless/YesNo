@@ -9,7 +9,7 @@ using siv::YesNo;
 using FormatDisk = YesNo<struct FormatDisk_tag>;
 using WriteLog = YesNo<struct WriteLog_tag>;
 
-void Task(FormatDisk formaDisk, WriteLog writeLog)
+void DoTask(FormatDisk formaDisk, WriteLog writeLog)
 {
 	if (formaDisk)
 		std::cout << "Formatting a disk...\n";
@@ -19,11 +19,11 @@ void Task(FormatDisk formaDisk, WriteLog writeLog)
 
 int main()
 {
-	Task(FormatDisk::No, WriteLog::Yes);
-	Task(FormatDisk{ false }, WriteLog{ true });
+	DoTask(FormatDisk::No, WriteLog::Yes);
+	DoTask(FormatDisk{ false }, WriteLog{ true });
 
-	Task(WriteLog::Yes, FormatDisk::No); // error
-	Task(false, true); // error
+	DoTask(WriteLog::Yes, FormatDisk::No); // error
+	DoTask(false, true); // error
 }
 ```
 
