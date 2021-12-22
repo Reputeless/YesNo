@@ -50,6 +50,9 @@ namespace siv
 	public:
 
 		[[nodiscard]]
+		YesNo() = default;
+
+		[[nodiscard]]
 		explicit constexpr YesNo(bool yesNo) noexcept
 			: m_yesNo{ yesNo } {}
 
