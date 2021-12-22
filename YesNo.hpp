@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------
 //
-//	siv::PerlinNoise
+//	siv::YesNo
 //	
 //	Copyright (c) 2021 Ryo Suzuki <reputeless@gmail.com>
 //	Distributed under the Boost Software License, Version 1.0.
